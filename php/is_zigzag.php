@@ -69,6 +69,14 @@ function solution($numbers) {
     }
     return $zigzag;
 }
+var_dump(solution([1, 2, 1, 3, 4]));
 
-$var = solution([1, 2, 1, 3, 4]);
-var_dump($var);
+if([1, 1, 0] == solution([1, 2, 1, 3, 4])){
+    echo "Test passed \n";
+    echo "input [1, 2, 1, 3, 4] \n";
+    echo "Output [1, 1, 0]";
+    return;
+}
+else{
+    echo "test failed";
+}
